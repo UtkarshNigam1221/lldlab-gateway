@@ -1,0 +1,44 @@
+run:
+  timeout: 5m
+  tests: true
+
+linters:
+  enable:
+    - gofmt
+    - govet
+    - staticcheck
+    - errcheck
+    - gosimple
+    - ineffassign
+    - unused
+    - typecheck
+    - bodyclose
+    - unconvert
+    - unparam
+    - misspell
+    - gocyclo
+    - gocritic
+    - gosec
+    - revive
+    - stylecheck
+
+linters-settings:
+  gocyclo:
+    min-complexity: 15
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - performance
+      - style
+  gosec:
+    excludes:
+      - G404
+  revive:
+    rules:
+      - name: exported
+        disabled: false
+
+issues:
+  exclude-use-default: false
+  max-issues-per-linter: 0
+  max-same-issues: 0
