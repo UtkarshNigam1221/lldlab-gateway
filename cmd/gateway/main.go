@@ -27,7 +27,7 @@ func main() {
 
 	configPath := os.Getenv("CONFIG_PATH")
 	if configPath == "" {
-		configPath = fmt.Sprintf("config.%s.yaml", env)
+		configPath = fmt.Sprintf("./../../config.%s.yaml", env)
 	}
 
 	log.Printf("Loading configuration for environment: %s from %s", env, configPath)
