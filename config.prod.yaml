@@ -7,8 +7,8 @@ server:
 
 cors:
   allowed_origins:
-    - "https://yourdomain.com"
-    - "https://app.yourdomain.com"
+    - "https://lldlab-frontend.vercel.app"
+    - "http://localhost:3000"
   allowed_methods:
     - "GET"
     - "POST"
